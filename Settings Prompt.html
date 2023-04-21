@@ -33,72 +33,97 @@ body {
 }
 form{
   background: rgb(71, 71, 71);
-  width: 100%;
+  width: 150%;
+  height: 80%;
   background-repeat:no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+}
+.button{
+  background-color: #1c87c9;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.name{
+  color: grey;
+  font-size: 25px;
+  text-align: center;
+}
+.bio{
+  color: grey;
+  font-size: 18px;
+  text-align: center;
+}
+.buttons {
+  width: 350px;
+  border: none;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
 </style>
 
 </head>
 
-<body class="">
+<body>
 
 
 
       <form class="login-form">
 
         <img src="Bread Theif.png" alt="Bread Logo" style="width:70px;height:70px;float: right;">
-        <a href="Login Prompt.html" class="btn waves-effect waves-light col s12">Return</a>
-        
-        <div class="row margin">
-            <div class="input-field col s12">
-              <i class="mdi-social-person-outline prefix"></i>
-              <input id="Name" type="text" class="validate">
-              <label for="Name" class="center-align">Name or nickname</label>
-            </div>
-        </div>
-        
-
-        <div class="row margin">
+        <a href="Scoreboard Prompt.html" class="btn waves-effect waves-light col s12">Return</a>
+  
+        <div class="row">
           <div class="input-field col s12">
-            <i class="mdi-social-person-outline prefix"></i>
-            <input id="username" type="text" class="validate">
-            <label for="username" class="center-align">Username</label>
+            <img class="center" src="Profile Picture.png">
           </div>
         </div>
 
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-communication-email prefix"></i>
-            <input id="email" type="email" class="validate">
-            <label for="email" class="center-align">Email</label>
-          </div>
+        <div>
+          <p class="name">John Doe</p>
+          <p class="bio">I love to win money with this app!</p>
         </div>
-        
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password-again" type="password">
-            <label for="password-again">Re-enter password</label>
+
+        <div>
+          <div class="buttons">
+            <a class="btn waves-effect waves-light col s12" style="background-color:rgb(32, 229, 0);color:rgb(5, 5, 5);font-size:100%">Rule Book</a>
+            <a class="btn waves-effect waves-light col s12" style="background-color:rgb(32, 229, 0);color:rgb(5, 5, 5);font-size:100%">Current Game</a>
           </div>
         </div>
 
         <div class="row">
-          <div class="input-field col s12">
-            <a href="Setup Prompt.html" class="btn waves-effect waves-light col s12">Register Now</a>
+          <div>
+            <a class="button">Deposit Cash</a>
           </div>
-          <div class="input-field col s12">
-            <p class="margin center medium-small sign-up" color="white">Already have an account? <a href="Sign In Prompt.html">Login</a></p>
+        </div>
+
+        <div class="row">
+          <div>
+            <a class="button">Invite Family</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <a href="Login Prompt.html" class="button">Sign Out</a>
           </div>
         </div>
       </form>

@@ -33,12 +33,62 @@ body {
 }
 form{
   background: rgb(71, 71, 71);
-  width: 100%;
+  width: 150%;
+  height: 60%;
   background-repeat:no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
 }
 </style>
 
@@ -51,55 +101,30 @@ form{
       <form class="login-form">
 
         <img src="Bread Theif.png" alt="Bread Logo" style="width:70px;height:70px;float: right;">
-        <a href="Login Prompt.html" class="btn waves-effect waves-light col s12">Return</a>
+        <a href="Scoreboard Prompt.html" class="btn waves-effect waves-light col s12">Return</a>
         
-        <div class="row margin">
-            <div class="input-field col s12">
-              <i class="mdi-social-person-outline prefix"></i>
-              <input id="Name" type="text" class="validate">
-              <label for="Name" class="center-align">Name or nickname</label>
-            </div>
+        <div class="container">
+          <img src="Profile Picture.png" alt="Avatar">
+          <p>I will win!</p>
+          <span class="time-right">11:00</span>
         </div>
         
-
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-social-person-outline prefix"></i>
-            <input id="username" type="text" class="validate">
-            <label for="username" class="center-align">Username</label>
-          </div>
-        </div>
-
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-communication-email prefix"></i>
-            <input id="email" type="email" class="validate">
-            <label for="email" class="center-align">Email</label>
-          </div>
+        <div class="container darker">
+          <img src="Profile Picture.png" alt="Avatar" class="right">
+          <p>Not on my watch!</p>
+          <span class="time-left">11:01</span>
         </div>
         
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
-          </div>
+        <div class="container">
+          <img src="Profile Picture.png" alt="Avatar">
+          <p>I will win, not you.</p>
+          <span class="time-right">11:02</span>
         </div>
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password-again" type="password">
-            <label for="password-again">Re-enter password</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s12">
-            <a href="Setup Prompt.html" class="btn waves-effect waves-light col s12">Register Now</a>
-          </div>
-          <div class="input-field col s12">
-            <p class="margin center medium-small sign-up" color="white">Already have an account? <a href="Sign In Prompt.html">Login</a></p>
-          </div>
+        
+        <div class="container darker">
+          <img src="Profile Picture.png" alt="Avatar" class="right">
+          <p>Nah, I dunno. We will see next game.</p>
+          <span class="time-left">11:05</span>
         </div>
       </form>
 

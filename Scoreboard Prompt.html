@@ -27,6 +27,20 @@ body {
     vertical-align: middle;
 
 }
+
+.buttons {
+  width: 460px;
+  border: none;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.action_btn {
+  display: inline-block;
+  width: calc(50% - 4px);
+  margin: 0 auto;
+}
 .margin {
   margin: 0 !important;
 
@@ -40,67 +54,84 @@ form{
   -o-background-size: cover;
   background-size: cover;
 }
+#container {
+  width: 600px;
+  height: auto;
+}
+
+.row {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #AFAFAF;
+}
+
+.name {
+  float:left;
+  width: 75%;
+  line-height: 60px;
+  font-size:150%;
+  color:rgb(235, 235, 235);
+}
+
+.score {
+  float:left;
+  width: 25%;
+  font-size:150%;
+  color:rgb(235, 235, 235);
+}
+
+
 </style>
 
 </head>
 
 <body class="">
 
-
-
       <form class="login-form">
 
         <img src="Bread Theif.png" alt="Bread Logo" style="width:70px;height:70px;float: right;">
-        <a href="Login Prompt.html" class="btn waves-effect waves-light col s12">Return</a>
-        
+        <a href="Settings Prompt.html" class="btn waves-effect waves-light col s12" style="background-color:rgb(32, 229, 0);color:rgb(5, 5, 5);font-size:150%">Settings</a>
         <div class="row margin">
-            <div class="input-field col s12">
-              <i class="mdi-social-person-outline prefix"></i>
-              <input id="Name" type="text" class="validate">
-              <label for="Name" class="center-align">Name or nickname</label>
-            </div>
-        </div>
-        
-
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-social-person-outline prefix"></i>
-            <input id="username" type="text" class="validate">
-            <label for="username" class="center-align">Username</label>
-          </div>
-        </div>
-
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-communication-email prefix"></i>
-            <input id="email" type="email" class="validate">
-            <label for="email" class="center-align">Email</label>
+          <div class="input-field col s12 center">
+            <p class="center login-form-text" style="color:rgb(235, 235, 235);font-size:200%">ScoreBoard</p>
           </div>
         </div>
         
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
+        <div id="container">
+          <div class="row">
+            <div class="name">Jim</div><div class="score">Total Chores Completed: 5</div>
           </div>
-        </div>
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password-again" type="password">
-            <label for="password-again">Re-enter password</label>
+        
+          <div class="row">
+            <div class="name">Bob</div><div class="score">Total Chores Completed: 3</div>
+          </div>
+        
+          <div class="row">
+            <div class="name">Darrell</div><div class="score">Total Chores Completed: 2</div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="input-field col s12">
-            <a href="Setup Prompt.html" class="btn waves-effect waves-light col s12">Register Now</a>
-          </div>
-          <div class="input-field col s12">
-            <p class="margin center medium-small sign-up" color="white">Already have an account? <a href="Sign In Prompt.html">Login</a></p>
+        <div class="buttons">
+          <a href="Game Chat Prompt.html" class="btn waves-effect waves-light col s12" style="background-color:rgb(32, 229, 0);color:rgb(5, 5, 5);font-size:150%">Chat</a>
+          <a href="Store Prompt.html" class="btn waves-effect waves-light col s12" style="background-color:rgb(32, 229, 0);color:rgb(5, 5, 5);font-size:150%">Store</a>
+        </div>
+        
+        <div class="row margin">
+          <div class="input-field col s12 center">
+            <p class="center login-form-text" style="color:rgb(235, 235, 235);font-size:200%">Achievements</p>
           </div>
         </div>
+        
+        <div id="container">
+          <div class="row">
+            <div class="name">Pro Dishwasher</div>
+          </div>
+          <div class="row">
+            <div class="name">Bank Robber</div>
+          </div>
+        </div>
+
       </form>
 
 
